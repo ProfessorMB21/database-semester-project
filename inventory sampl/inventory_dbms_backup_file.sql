@@ -24,6 +24,7 @@ CREATE TABLE Customers (
     id INT PRIMARY KEY AUTO_INCREMENT,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
+    middle_name VARCHAR(50),
     email VARCHAR(100) UNIQUE NOT NULL
 
     CONSTRAINT customers_email_check CHECK (email LIKE '%@%.%')
